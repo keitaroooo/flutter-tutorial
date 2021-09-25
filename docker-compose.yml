@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+
+  flutter:
+    build:
+      context: ./flutter
+    container_name: flutter
+    volumes:
+      - ./flutter:/home/flutter
+      - /tmp/.X11-unix:/tmp/.X11-unix
